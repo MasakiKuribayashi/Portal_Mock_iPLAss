@@ -155,17 +155,17 @@ task viewMergedServiceConfig(type: JavaExec, group: 'application', description :
 // ===============================
 //  org.iplass.dev プラグイン設定
 // ===============================
-//configure(iplass) {
+configure(iplass) {
 //	// required
-//	tenantId = TENANT_ID // change your tenant id
+	tenantId = 8 // change your tenant id
 //
 //	// optional
 //	//serviceConfig = '/mtp-service-config.xml'
 //	//language = 'system'
 //	//classpath = sourceSets.main.runtimeClasspath
-//}
+}
 //
-//metaSyncRdbToFile {
-//	// RDB管理しているメタデータパスを入力する。
-//	source = ['/entity/*', '/staticresource/*']
-//}
+metaSyncRdbToFile {
+	// RDB管理しているメタデータパスを入力する。
+	source = ['/entity/*', '/staticresource/*']
+}

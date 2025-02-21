@@ -206,7 +206,7 @@
 			テナントメタデータの保存先を指定します. UtilityClassのGroovyソースファイルは別の保存先を指定できます.
 			相対パスを指定する場合、EclipseのTomcat起動構成で作業ディレクトリをプロジェクトのルートディレクトリにしてください. (例: ${workspace_loc:iplass-skeleton})
 		-->
-		<!--
+		
 		<property name="tenantLocalStore" class="org.iplass.mtp.impl.metadata.composite.CompositeMetaDataStore" >
 	 		<property name="pathMapping" class="org.iplass.mtp.impl.metadata.composite.MetaDataStorePathMapping">
 	 				<property name="pathPrefix" value="/entity/"/>
@@ -221,7 +221,7 @@
 			<property name="store" class="org.iplass.mtp.impl.metadata.xmlfile.XmlFileMetaDataStore" >
  				<property name="fileStorePath" value="src/main/tenantLocalStore/" />
  				<property name="groovySourceStorePath" value="src/main/groovy/" />
- 				<property name="localTenantId" value="XXX"/>
+ 				<property name="localTenantId" value="8"/>
 			</property>
  			<property name="defaultStoreClass" value="org.iplass.mtp.impl.metadata.xmlfile.XmlFileMetaDataStore"/>
  		</property>
